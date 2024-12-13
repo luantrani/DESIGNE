@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turismo na Inglaterra</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        /* Impede a rolagem da página */
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden; /* Desativa a rolagem */
+            background-color: white; /* Fundo branco */
+        }
+
+        /* Cria uma estrutura de layout flexível */
+        body {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+
+        /* Definindo a imagem como fundo da página */
+        body {
+            background-image: url('imagens/londres2.png'); /* Caminho da imagem de fundo */
+            background-size: cover; /* Faz a imagem cobrir toda a tela */
+            background-position: center; /* A imagem será centralizada */
+            background-repeat: no-repeat; /* A imagem não se repetirá */
+            background-attachment: fixed; /* Fixa a imagem no fundo */
+        }
+
+        /* Cabeçalho fixo */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: rgba(0, 33, 71, 0.8); /* Azul com transparência */
+            color: white;
+            padding: 10px 0;
+            z-index: 10;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .logo img {
+            margin-right: 15px;
+        }
+
+        header h1 {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        /* Estilo de navegação */
+        nav ul {
+            list-style-type: none;
+            display: flex;
+            justify-content: center;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        /* Conteúdo */
+        main {
+            margin-top: 80px; /* Espaço para o cabeçalho fixo */
+            margin-bottom: 60px; /* Espaço para o rodapé fixo */
+            padding: 20px;
+            height: 100%; /* Garante que o conteúdo ocupe o restante da tela */
+            box-sizing: border-box;
+            overflow: hidden; /* Não permite rolagem */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Texto no meio da tela */
+        .hero-banner {
+            position: relative;
+            width: 100%;
+            height: 100vh; /* Altura total da tela */
+        }
+
+        .hero-banner img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* A imagem ocupa toda a tela */
+            display: block;
+        }
+
+        .hero-texto {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white; /* Cor do texto */
+            font-size: 4em; /* Tamanho da fonte aumentado */
+            font-weight: bold; /* Deixa o texto em negrito */
+            text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.7); /* Sombra no texto mais forte */
+        }
+
+        /* Rodapé fixo */
+        footer {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: rgba(0, 33, 71, 0.8); /* Azul com transparência */
+            color: white;
+            text-align: center;
+            padding: 10px;
+            z-index: 10;
+        }
+        
+      #imagem-diferente {
+        width: 100px;  /* Largura fixa */
+      height: 50px
+      }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="imagens/inglaterra.png" id="imagem-diferente">
+            <h1>INGLATERRA</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="turismo.html">Turismo</a></li>
+                <li><a href="cultura.html">Cultura</a></li>
+                <li><a href="gastronomia.html">Culinária</a></li>
+                <li><a href="informacoes.html">Curiosidades</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="hero-banner">
+            <img src="imagens/londres2.png" alt="Imagem de Londres">
+            <div class="hero-texto">
+                Explore as belezas da Inglaterra
+            </div>
+        </div>
+        <section class="conteudo">
+            <h2>Descubra o que a Inglaterra tem a oferecer!</h2>
+            <p>Conheça os pontos turísticos, cultura, culinária e mais!</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Turismo na Inglaterra</p>
+    </footer>
+</body>
+</html>

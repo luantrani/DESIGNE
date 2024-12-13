@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curiosidades sobre a Inglaterra</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+      /* Resetando margens e padding para evitar espaçamentos indesejados */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      /* Estilo para o body usando flexbox */
+      body {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh; /* Faz o body ocupar toda a altura da tela */
+      }
+
+      /* Estilos gerais */
+      img {
+        width: 300px;  /* Define a largura de todas as imagens */
+        height: 200px; /* Define a altura das imagens */
+        object-fit: cover; /* Mantém a imagem proporcional e a preenche */
+      }
+
+      #imagem-diferente {
+        width: 100px;  /* Largura fixa da imagem do logo */
+        height: 50px;
+      }
+
+      /* Estilo para o header */
+      header {
+        text-align: center;
+        padding: 10px;
+        background-color: #002147;  /* Azul escuro */
+        color: white;
+      }
+
+      /* Estilo da navegação */
+      nav ul {
+        list-style-type: none;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        margin: 10px 0;
+      }
+
+      nav ul li {
+        margin: 0 15px;
+      }
+
+      nav ul li a {
+        color: white;
+        text-decoration: none;
+        font-size: 18px;
+      }
+
+      nav ul li a:hover {
+        text-decoration: underline;
+      }
+
+      /* Estilo do conteúdo */
+      main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 20px;
+        flex-grow: 1; /* Faz o main ocupar o restante da altura disponível */
+      }
+
+      h2 {
+        font-size: 2.5em;
+        margin-bottom: 20px;
+      }
+
+      p {
+        font-size: 1.2em;
+        margin-bottom: 30px;
+      }
+
+      /* Flexbox para o conteúdo */
+      .conteudo {
+        display: flex;
+        justify-content: center;  /* Alinha os itens no centro */
+        gap: 30px;  /* Espaço entre as imagens */
+        flex-wrap: wrap; /* Permite que as imagens se movam para a linha seguinte em telas menores */
+      }
+
+      .item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        max-width: 300px; /* Limita a largura das imagens */
+      }
+
+      .item h3 {
+        font-size: 1.5em;
+        margin-top: 10px;
+      }
+
+      .item p {
+        font-size: 1em;
+        margin-top: 10px;
+      }
+
+      /* Estilo para o rodapé */
+      footer {
+        text-align: center;
+        background-color: #002147;
+        color: white;
+        padding: 10px;
+      }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="imagens/inglaterra.png" id="imagem-diferente"> 
+            <h1>INGLATERRA</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="turismo.html">Turismo</a></li>
+                <li><a href="cultura.html">Cultura</a></li>
+                <li><a href="gastronomia.html">Culinária</a></li>
+                <li><a href="informacoes.html">Curiosidades</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Curiosidades sobre a Inglaterra</h2>
+        <p>Descubra fatos fascinantes sobre a cultura, história e tradições inglesas.</p>
+        
+        <section class="conteudo">
+            <div class="item">
+              <h3>Tradição do Chá</h3>
+                <img src="imagens/cha.png" alt="Chá Inglês">
+                <p>Os ingleses consomem cerca de 165 milhões de xícaras de chá por dia!</p>
+            </div>
+            <div class="item">
+              <h3>Ônibus de Dois Andares</h3>
+                <img src="imagens/onibus.png" alt="Ônibus Vermelho">
+                <p>Os famosos ônibus vermelhos de dois andares são símbolos de Londres.</p>
+            </div>
+            <div class="item">
+              <h3>Trânsito na Mão Esquerda</h3>
+                <img src="imagens/mao.png" alt="Trânsito na Mão Esquerda">
+                <p>A Inglaterra é um dos poucos países onde se dirige na mão esquerda.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Turismo na Inglaterra</p>
+    </footer>
+</body>
+</html>
+
